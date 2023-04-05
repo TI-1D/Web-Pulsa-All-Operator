@@ -1,4 +1,4 @@
-WEB PENJUALAN PULSA ALL OPERATOR 
+<h2>WEB PENJUALAN PULSA ALL OPERATOR</h2> 
 KELOMPOK 6 <br>
 Anggota<br>
 1. Muhammad Fadhilla
@@ -6,6 +6,7 @@ Anggota<br>
 3. Sri Mutia
 4. Nurul Affiqah Simbolon
 
+Tugas Kelompok kami membuat website penjualan pulsa all operator
 
 fungsi penjelasan : <br>
 U (untracked) = file yang belum pernah dimasukkan ke github <br>
