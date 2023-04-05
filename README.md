@@ -1,10 +1,10 @@
 <h2>WEB PENJUALAN PULSA ALL OPERATOR</h2> 
 KELOMPOK 6 <br>
 Anggota<br>
-1. Muhammad Fadhilla
-2. Dimas Kurniawan
-3. Sri Mutia
-4. Nurul Affiqah Simbolon
+1. Muhammad Fadhilla <br>
+2. Dimas Kurniawan <br>
+3. Sri Mutia <br>
+4. Nurul Affiqah Simbolon <br>
 
 Tugas Kelompok kami membuat website penjualan pulsa all operator
 
