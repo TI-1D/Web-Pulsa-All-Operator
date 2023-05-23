@@ -14,39 +14,37 @@
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
     <script src="js/script.js" defer></script>	   
 </head>
-<body>  
-  <!--Navbar-->
-  <nav>
-    <div class="navbar">
-      <i class='bx bx-menu'></i>
-      <div class="logo"><a href="#">Aero cell</a></div>
-      <div class="nav-links">
-        <div class="sidebar-logo">
-          <span class="logo-name">Aero Cell</span>
-          <i class='bx bx-x' ></i>
-        </div>
-        <ul class="links">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="pulsa.html">Pulsa</a></li>
-          <li>
-            <a href="#">Produk & Paket</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-            <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="produktelkom.html">Telkomsel</a>
-              <a href="#">XL</a>
-              <a href="#">Smartfren</a>
-              <a href="#">Axis</a>
-              <a href="#">Im 3</a>
-              <a href="#">By.u</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aero Cell</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produk&paket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Belanja
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li>
-            <a href="#">Promo</a>
-          </li>
-          <li><a href="#">Bantuan</a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
+          </div>
       <div class="search-box">
         <i class='bx bx-search'></i>
         <div class="input-box">
@@ -392,59 +390,8 @@
       <div class="col-lg-4 col-sm-4">
         <div class="single-box"></div>
       </div>
+      </nav>
 
-      <div class="col-lg-4 col-sm-8">
-        <div class="single-box">
-            <img src="img/logo.png" alt="">
-        <p>Silahkan membaca FAQ di halaman ini jika kamu membutuhkan pertanyaan jangan ragu untuk menghubungi kami.</p>
-        <h3 style="cursor: pointer;">BACA FAQ DI SINI</h3>
-        </div>
-        </div>
-    </div>
-  </div>
-</footer>
-
-<div class="foot">
-<div class="wrapper">
-  Copyright @Aero Cell, 2023
-  <div class="button">
-     <div class="icon">
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-     </div>
-     <a href=""><span>Facebook</span></a>
-  </div>
-  <div class="button">
-     <div class="icon">
-        <a href=""><i class="fab fa-twitter"></i></a>
-     </div>
-     <a href=""><span>Twitter</span></a>
-  </div>
-  <div class="button">
-     <div class="icon">
-        <a href=""><i class="fab fa-instagram"></i></a>
-     </div>
-     <a href=""><span>Instagram</span></a>
-  </div>
-  <div class="button">
-     <div class="icon">
-        <a href=""><i class="fab fa-github"></i></a>
-     </div>
-     <a href=""><span>Github</span></a>
-  </div>
-  <div class="button">
-     <div class="icon">
-        <a href=""><i class="fab fa-youtube"></i></a>
-     </div>
-     <a href=""><span>YouTube</span></a>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
