@@ -1,0 +1,100 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+#lambang{
+  padding-top: 100px;
+  background-color: skyblue;
+  height: 70vh;
+}
+
+#promo{
+  height: 70vh;
+}
+
+.wrappaer{
+  max-width: 1100px;
+  position: relative;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.wrappaer i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+#promo .judul h1{
+    margin-left: 133px;
+    margin-top: 30px;
+}
+
+
+  .wrappaer i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+
+  .wrappaer i:hover{
+    background: #f2f2f2;
+  }
+  
+  .wrappaer i:first-child{
+    left: -22px;
+    display: none;
+  }
+
+  .wrappaer i:last-child{
+    right: -22px;
+  }
+
+  .wrappaer .carousell{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .carousell.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+
+  .carousell.dragging img{
+    pointer-events: none;
+  }
+
+  .carousell img{
+    border-radius: 2%;
+    height: 250px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 20px;
+    width: calc(100% / 3);
+  }
+  
+  .carousell img:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);;
+  }
+
+  .carousell img:first-child{
+    margin-left: 0px;
+  }
+
+ 
+

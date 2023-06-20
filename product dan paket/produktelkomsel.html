@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero cell</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+  <script src="../js/script.js" defer></script>	   
+</head>
+<style>
+  :root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+  /* collection */
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+    #collection {
+        margin-top: 100px;
+    }
+    #tell .small{
+        font-size: 12px;
+    }
+</style>
+<body>  
+      <!--Navbar-->
+      <nav>
+        <div class="navbar">
+          <i class="bx bx-menu"></i>
+          <div class="zee"><img src="/img/logo/logo.jpg" height="60px" width="60px" /></div>
+          <div class="logo" style="margin-left: -200px; margin-right: -150px;"><a href="#">Aero cell</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">Aero Cell</span>
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="links">
+              <li><a href="../index.html">Beranda</a></li>
+              <li><a href="../pulsa.html">Pulsa</a></li>
+              <li>
+                <a href="#">Produk & Paket</a>
+                <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li>
+                    <a href="/product dan paket/produktelkomsel.html">Telkomsel</a>
+                    <a href="/product dan paket/produkaxis.html">Axis</a>
+                    <a href="/product dan paket/produkindoosat.html">Indoosat</a>
+                    <a href="/product dan paket/produkxl.html">XL</a>
+                    <a href="/product dan paket/produkbyu.html">By.u</a>
+                    <a href="/product dan paket/produksmartfren.html">Smartfren</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../promo/promo.html">Promo</a>
+              </li>
+              <li><a href="#">Bantuan</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Cari...." />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <section id = "collection" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center">
+            <h2 class = "position-relative d-inline-block">Paket Telkomsel</h2>
+        </div>
+
+        <div class = "row g-0">
+            <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Promo Hanya Untukmu</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".cs">Combo Sakti</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".omg">OMG Nonton</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".im">Internet Malam</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".gm">GigaMax</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".pbk">Paket Bundling Kesehatan</button>
+            </div>
+
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+
+                  <div class = "col-md-6 col-lg-3 col-xl-4 p-2 cs">
+                    <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Combo Sakti 20 GB<br>20 GB</h6>
+                      <h3>20 GB | 30 hari</h3><br>
+                      <p class="small">Internet <br>13 GB</p>
+                      <p class="small">Sosmed <br>7 GB</p>
+                      <p class="small">Nelpon <br> 200 Menit</p>
+                      <p class="small">SMS <br>500 sms</p><br>
+                        <h3 class="akhir">Rp. 70.000</h3>
+                        <p class="btn btn-primary">Beli</p>
+                      </div>
+                    </div>
+                    </div>
+      
+                    <div class = "col-md-6 col-lg-3 col-xl-4 p-2 cs">
+                    <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Combo Sakti 32 GB<br>32 GB</h6>
+                      <h3>32 GB | 30 hari</h3><br>
+                      <p class="small">Internet <br>22 GB</p>
+                      <p class="small">Sosmed <br>10 GB</p>
+                      <p class="small">Nelpon <br> 700 Menit</p>
+                      <p class="small">SMS <br>500 sms</p><br>
+                        <h3 class="akhir">Rp. 98.000<i class="fas fa-light fa-tag" style="font-size: 12px;">  <del> Rp. 100.000</del></i></h3>
+                        <p class="btn btn-primary">Beli</p>
+                      </div>
+                    </div>
+                    </div>
+      
+                    <div class = "col-md-6 col-lg-3 col-xl-4 p-2 cs">
+                    <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Combo Sakti 45 GB<br>45 GB</h6>
+                      <h3>45 GB | 30 hari</h3><br>
+                      <p class="small">Internet <br>30 GB</p>
+                      <p class="small">Sosmed <br>15 GB</p>
+                      <p class="small">Nelpon <br> 1000 Menit</p>
+                      <p class="small">SMS <br>1000 sms</p><br>
+                        <h3 class="akhir">Rp. 120.000</h3>
+                        <p class="btn btn-primary">Beli</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                      <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">Internet Malam 5 GB</h6>
+                        <h3>5 GB | 3 hari</h3><br>
+                          <h3 class="akhir">Rp. 7.000</h3>
+                          <p class="btn btn-primary">Beli</p>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                        <div class="card">
+                        <div class="card-body">
+                          <h6 class="card-title">Internet Malam 5 GB</h6>
+                          <h3>5 GB | 7 hari</h3><br>
+                            <h3 class="akhir">Rp. 13.000</h3>
+                            <p class="btn btn-primary">Beli</p>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                          <div class="card">
+                          <div class="card-body">
+                            <h6 class="card-title">Internet Malam 10 GB</h6>
+                            <h3>10 GB | 7 hari</h3><br>
+                              <h3 class="akhir">Rp. 18.000</h3>
+                              <p class="btn btn-primary">Beli</p>
+                            </div>
+                          </div>
+                          </div>
+
+                          <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                            <div class="card">
+                            <div class="card-body">
+                              <h6 class="card-title">Internet Malam 10 GB</h6>
+                              <h3>10 GB | 15 hari</h3><br>
+                                <h3 class="akhir">Rp. 20.000</h3>
+                                <p class="btn btn-primary">Beli</p>
+                              </div>
+                            </div>
+                            </div>
+
+                            <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                              <div class="card">
+                              <div class="card-body">
+                                <h6 class="card-title">Internet Malam 8 GB</h6>
+                                <h3>8 GB | 30 hari</h3><br>
+                                  <h3 class="akhir">Rp. 20.000</h3>
+                                  <p class="btn btn-primary">Beli</p>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div class = "col-md-6 col-lg-3 col-xl-4 p-2 im">
+                                <div class="card">
+                                <div class="card-body">
+                                  <h6 class="card-title">Internet Malam 15 GB</h6>
+                                  <h3>15 GB | 30 hari</h3><br>
+                                    <h3 class="akhir">Rp. 28.000</h3>
+                                    <p class="btn btn-primary">Beli</p>
+                                  </div>
+                                </div>
+                                </div>
+
+                                <div class = "col-md-6 col-lg-3 col-xl-4 p-2 gm">
+                                  <div class="card">
+                                  <div class="card-body">
+                                    <h3 class="card-title">GigaMax 6 GB</h3>
+                                    <p class="small">Internet <br>1 GB</p>
+                                    <p class="small">Genflix <br>30 Day</p>
+                                    <p class="small">Viu <br> 30 Day</p>
+                                    <p class="small">Maxstream <br>5 GB</p>
+                                    <p class="small">WeTv <br> 30 Day</p><br>
+                                      <h3 class="akhir">Rp. 25.000</h3>
+                                      <p class="btn btn-primary">Beli</p>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div class = "col-md-6 col-lg-3 col-xl-4 p-2 gm">
+                                    <div class="card">
+                                    <div class="card-body">
+                                      <h3 class="card-title">GigaMax 15 GB</h3>
+                                      <p class="small">Internet <br>3 GB</p>
+                                      <p class="small">Genflix <br>30 Day</p>
+                                      <p class="small">Viu <br> 30 Day</p>
+                                      <p class="small">Maxstream <br>12 GB</p>
+                                      <p class="small">WeTv <br> 30 Day</p><br>
+                                        <h3 class="akhir">Rp. 52.000</h3>
+                                        <p class="btn btn-primary">Beli</p>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    <div class = "col-md-6 col-lg-3 col-xl-4 p-2 gm">
+                                      <div class="card">
+                                      <div class="card-body">
+                                        <h3 class="card-title">GigaMax 35 GB</h3>
+                                        <p class="small">Internet <br>7 GB</p>
+                                        <p class="small">Genflix <br>30 Day</p>
+                                        <p class="small">Viu <br> 30 Day</p>
+                                        <p class="small">Maxstream <br>28 GB</p>
+                                        <p class="small">WeTv <br> 30 Day</p><br>
+                                          <h3 class="akhir">Rp. 105.000</h3>
+                                          <p class="btn btn-primary">Beli</p>
+                                        </div>
+                                      </div>
+                                      </div>
+
+                                      <div class = "col-md-6 col-lg-3 col-xl-4 p-2 gm">
+                                        <div class="card">
+                                        <div class="card-body">
+                                          <h3 class="card-title">GigaMax 55 GB</h3>
+                                          <p class="small">Internet <br>15 GB</p>
+                                          <p class="small">Genflix <br>30 Day</p>
+                                          <p class="small">Viu <br> 30 Day</p>
+                                          <p class="small">Maxstream <br>40 GB</p>
+                                          <p class="small">WeTv <br> 30 Day</p><br>
+                                            <h3 class="akhir">Rp. 155.000</h3>
+                                            <p class="btn btn-primary">Beli</p>
+                                          </div>
+                                        </div>
+                                        </div>
+
+                                        <div class = "col-md-6 col-lg-3 col-xl-4 p-2 pbk">
+                                          <div class="card">
+                                          <div class="card-body">
+                                            <h6 class="card-title">ComboFit 3.5 GB</h6>
+                                            <h3>3.5 GB | 30 hari</h3><br>
+                                            <p class="small">Allianz <br>30 Day</p>
+                                            <p class="small">FITA Premium <br>30 Day</p>
+                                            <p class="small">Kuota FITA <br>2 GB</p>
+                                            <p class="small">Data Allnet <br>1.5 GB</p><br>
+                                              <h3 class="akhir">Rp. 55.000</h3>
+                                              <p class="btn btn-primary">Beli</p>
+                                            </div>
+                                          </div>
+                                          </div>          
+              
+                                          <div class = "col-md-6 col-lg-3 col-xl-4 p-2 pbk">
+                                            <div class="card">
+                                            <div class="card-body">
+                                              <h6 class="card-title">ComboFit 3 GB</h6>
+                                              <h3>3.5 GB | 30 hari</h3><br>
+                                              <p class="small">Allianz <br>30 Day</p>
+                                              <p class="small">FITA Exercide Plan <br>30 Day</p>
+                                              <p class="small">Kuota FITA <br>2 GB</p>
+                                              <p class="small">Data Allnet <br>1 GB</p><br>
+                                                <h3 class="akhir">Rp. 44.000</h3>
+                                                <p class="btn btn-primary">Beli</p>
+                                              </div>
+                                            </div>
+                                            </div>          
+              
+                                            <div class = "col-md-6 col-lg-3 col-xl-4 p-2 pbk">
+                                              <div class="card">
+                                              <div class="card-body">
+                                                <h6 class="card-title">Paket Sehat 2 GB</h6>
+                                                <h3>2 GB | 30 hari</h3><br>
+                                                <p class="small">Telekonsultasi Halodoc <br>30 Day</p>
+                                                <p class="small">Prime Mobile <br>30 Day</p>
+                                                <p class="small">Internet <br>1.5 GB</p>
+                                                <p class="small">Kuota Halodoc <br>0.5 GB</p><br>
+                                                  <h3 class="akhir">Rp. 45.000</h3>
+                                                  <p class="btn btn-primary">Beli</p>
+                                                </div>
+                                              </div>
+                                              </div>
+                                              
+                                              <div class = "col-md-6 col-lg-3 col-xl-4 p-2 best">
+                                                <div class="card">
+                                                <div class="card-body">
+                                                  <h6 class="card-title">Internet Spesial 14 GB</h6>
+                                                  <h3>30 hari</h3><br>
+                                                    <h3 class="akhir">Rp. 30.000</h3>
+                                                    <p class="btn btn-primary">Beli</p>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                  
+                                                <div class = "col-md-6 col-lg-3 col-xl-4 p-2 best">
+                                                  <div class="card">
+                                                  <div class="card-body">
+                                                    <h6 class="card-title">Internet Spesial 20 GB</h6>
+                                                    <h3>30 hari</h3><br>
+                                                      <h3 class="akhir">Rp. 55.000</h3>
+                                                      <p class="btn btn-primary">Beli</p>
+                                                    </div>
+                                                  </div>
+                                                  </div>
+
+                                                  <div class = "col-md-6 col-lg-3 col-xl-4 p-2 omg">
+                                                    <div class="card">
+                                                    <div class="card-body">
+                                                      <h6 class="card-title">OMG! Nonton 23 GB<br>23 GB</h6>
+                                                      <h3>23 GB | 30 hari</h3><br>
+                                                      <p class="small">Internet <br>11 GB</p>
+                                                      <p class="small">Nonton <br>12 GB</p>
+                                                      <p class="small">Prime Video Mobile <br>30 Hari</p><br>
+                                                        <h3 class="akhir">Rp. 114.000<i class="fas fa-light fa-tag" style="font-size: 12px;">  <del> Rp. 120.000</del></i></h3>
+                                                        <p class="btn btn-primary">Beli</p>
+                                                    </div>
+                                                    </div>
+                                                  </div>
+                                  
+                                                  <div class = "col-md-6 col-lg-3 col-xl-4 p-2 omg">
+                                                    <div class="card">
+                                                    <div class="card-body">
+                                                      <h6 class="card-title">OMG! Nonton 40 GB<br>40 GB</h6>
+                                                      <h3>40 GB | 30 hari</h3><br>
+                                                      <p class="small">Internet <br>20 GB</p>
+                                                      <p class="small">Kuota Nonton <br>20 GB</p>
+                                                      <p class="small">Prime Video Mobile <br>30 Hari</p><br>
+                                                        <h3 class="akhir">Rp. 179.000<i class="fas fa-light fa-tag" style="font-size: 12px;">  <del> Rp. 185.000</del></i></h3>
+                                                        <p class="btn btn-primary">Beli</p>
+                                                      </div>
+                                                    </div>
+                                                    </div>
+                                                  
+                                                    <div class = "col-md-6 col-lg-3 col-xl-4 p-2 omg">
+                                                    <div class="card">
+                                                    <div class="card-body">
+                                                      <h6 class="card-title">OMG! Nonton 75 GB<br>75 GB</h6>
+                                                      <h3>75 GB | 30 hari</h3><br>
+                                                      <p class="small">Internet <br>40 GB</p>
+                                                      <p class="small">Kuota Nonton <br>35 GB</p>
+                                                      <p class="small">Prime Video Mobile <br>30 Hari</p><br>
+                                                        <h3 class="akhir">Rp. 229.000<i class="fas fa-light fa-tag" style="font-size: 12px;">  <del> Rp. 230.000</del></i></h3>
+                                                        <p class="btn btn-primary">Beli</p>
+                                                      </div>
+                                                    </div>
+                                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of collection -->
+  
+    <!-- Footer Starts -->
+
+    <footer>
+      <div class="container">
+          <div class="heading" style="padding-bottom: 50px">
+            <h2 style="color: white; padding-bottom: 10px">Pembelian Pulsa Aero Cell Bikin Hidup Tenang Tanpa Pusing!</h2>
+            <p style="color: white">
+              Siapa sih yang tidak suka dengan berbalanja dengan mudah? Apalagi dengan tampilan web yang menarik dari Aero Cell, mana ada yang tahan. Kamu juga pasti suka kan dengan paket pulsa yang ada pada web satu ini. Selain dengan
+              banyak promo pulsa yang tersedia, kamu bisa lebih bebas lagi berselancar di dunia maya.
+            </p>
+          </div>
+
+          <div class="foot">
+            <h5 style="color: white; padding-bottom: 10px; margin-left: 8px">Media Sosial</h5>
+            <div class="wrapper">
+              <div class="button">
+                <div class="icon">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <a href=""><span>Facebook</span></a>
+              </div>
+              <div class="button">
+                <div class="icon">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href=""><span>Twitter</span></a>
+              </div>
+              <div class="button">
+                <div class="icon">
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href=""><span>Instagram</span></a>
+              </div>
+              <div class="button">
+                <div class="icon">
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+                <a href=""><span>Github</span></a>
+              </div>
+              <div class="button">
+                <div class="icon">
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href=""><span>YouTube</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-sm help">
+            <div class="row">
+              <div class="col-lg-8">
+                <h5 style="color: white">Cek & Beli Kuota Data Internet <br />Di Aero Cell</h5>
+                <span>Download Sekarang</span>
+                <div style="padding-top: 20px">
+                  <img src="/img/logo/google-play-and-apple-app-store-logos-22.png" alt="" height="50px" width="350px" />
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h5 style="color: white">Jelajahi</h5>
+                <span>Aero Cell App <br />Tentang Kami <br />Call Center <br />Daftar <br />Jaringan</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <div style="padding-top: 20px; background-color: navy; background-repeat: no-repeat; background-position: center; background-size: 100%; height: 10vh">
+      <h6><span style="text-align: left; color: white; margin-left: 80px; padding-right: 530px">Copyright @Aero Cell, 2023</span> <span style="text-align: right; color: white">Kebijakan Privasi &nbsp; | &nbsp;Syarat & Ketentuan</span></h6>
+    </div>
+
+  <script type="text/javascript" src="../js/jquery-3.6.4.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    // init Isotope
+var $grid = $('.collection-list').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  resetFilterBtns();
+  $(this).addClass('active-filter-btn');
+  $grid.isotope({ filter: filterValue });
+});
+
+var filterBtns = $('.filter-button-group').find('button');
+function resetFilterBtns(){
+  filterBtns.each(function(){
+    $(this).removeClass('active-filter-btn');
+  });
+}
+  </script>
+  </body>
+  </html>
